@@ -56,8 +56,6 @@ const ScheduleWeekView = ({ data }) => {
     }
   }, [plates]);
 
-  // Calculate weekly calories
-
   // Populate weeks
   useEffect(() => {
     if (schedule) {
@@ -159,8 +157,6 @@ const ScheduleWeekView = ({ data }) => {
               );
             })}
           </Flex>
-
-          <Text {...styles.totalCalories}></Text>
         </>
       ) : (
         <Spinner {...styles.spinner} />
