@@ -23,6 +23,7 @@ const SearchBar = ({
   InitialResults,
   isSearchLoading,
   setIsSearchLoading,
+  setApiError,
 }) => {
   const [originalResults, setOriginalResults] = useState(InitialResults);
 
@@ -38,7 +39,16 @@ const SearchBar = ({
 
     // Handle success & update results
     if (status === 200) {
-      const { plates } = data;
+      // Handle Spoontacular API's exceeded error
+      const { success, plates } = data;
+
+      if (!success) {
+        const { message } = data;
+
+        // Display backend error
+        setApiError(message);
+        return showToast({ status: "error", title: message });
+      }
 
       // Store orinal results in unmodified array
       setOriginalResults(plates);

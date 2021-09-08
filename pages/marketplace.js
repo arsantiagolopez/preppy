@@ -13,6 +13,7 @@ const Marketplace = () => {
   const [sortBy, setSortBy] = useState("ALL");
   const [active, setActive] = useState(null);
   const [isSearchLoading, setIsSearchLoading] = useState(false);
+  const [apiError, setApiError] = useState(null);
 
   const { data: plates } = useSWR("/api/plates");
   const { data: categories } = useSWR("/api/categories");
@@ -28,6 +29,7 @@ const Marketplace = () => {
     InitialResults,
     isSearchLoading,
     setIsSearchLoading,
+    setApiError,
   };
 
   return (
@@ -74,6 +76,7 @@ const Marketplace = () => {
             // Search loading spinner
             isSearchLoading && <Spinner {...styles.spinner} />
           }
+          {apiError && <Flex {...styles.noResultsMessage}>{apiError}</Flex>}
         </Flex>
       </Flex>
     </Layout>
