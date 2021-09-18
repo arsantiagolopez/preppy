@@ -23,21 +23,21 @@ const s3 = new aws.S3();
  * @returns a string of a working upload URL.
  */
 const generateUploadURL = async ({ userId }, res) => {
-  // try {
-  const imageName = `${userId}/${v4()}`;
+  try {
+    const imageName = `${userId}/${v4()}`;
 
-  const params = {
-    Bucket: process.env.AWS_BUCKET_NAME,
-    Key: imageName,
-    Expires: 60,
-  };
+    const params = {
+      Bucket: process.env.AWS_BUCKET_NAME,
+      Key: imageName,
+      Expires: 60,
+    };
 
-  const url = await s3.getSignedUrlPromise("putObject", params);
+    const url = await s3.getSignedUrlPromise("putObject", params);
 
-  return res.status(200).json({ url });
-  // } catch (error) {
-  //   return res.status(400).json({ message: error });
-  // }
+    return res.status(200).json({ url });
+  } catch (error) {
+    return res.status(400).json({ message: error });
+  }
 };
 
 /**

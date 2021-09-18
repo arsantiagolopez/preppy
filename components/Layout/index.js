@@ -1,4 +1,5 @@
 import { Flex, Heading } from "@chakra-ui/react";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import React from "react";
 import { Card } from "../Card";
@@ -31,48 +32,53 @@ const Layout = ({
   };
 
   return (
-    <Flex {...styles.wrapper}>
-      <Navigation {...navigationProps} />
-      <Flex {...styles.content}>
-        {/* Side desktop menu */}
-        <Sidebar />
+    <>
+      <Head>
+        <title>Preppy{pageTitle && ` - ${pageTitle}`}</title>
+      </Head>
+      <Flex {...styles.wrapper}>
+        <Navigation {...navigationProps} />
+        <Flex {...styles.content}>
+          {/* Side desktop menu */}
+          <Sidebar />
 
-        {/* Page title */}
-        {isPlates || isMarketplace ? (
-          <Flex direction="row">
-            <Heading
-              color={isPlates ? "brand" : "gray.200"}
-              onClick={() => !isPlates && router?.push("/plates")}
-              cursor={!isPlates && "pointer"}
-              {...styles.heading}
-            >
-              My Plates
-            </Heading>
-            <Heading
-              color={isMarketplace ? "brand" : "gray.200"}
-              onClick={() => !isMarketplace && router?.push("/marketplace")}
-              cursor={!isMarketplace && "pointer"}
-              {...styles.heading}
-              marginLeft="3"
-            >
-              Marketplace
-            </Heading>
-          </Flex>
-        ) : (
-          pageTitle && <Heading {...styles.heading}>{pageTitle}</Heading>
-        )}
+          {/* Page title */}
+          {isPlates || isMarketplace ? (
+            <Flex direction="row">
+              <Heading
+                color={isPlates ? "brand" : "gray.200"}
+                onClick={() => !isPlates && router?.push("/plates")}
+                cursor={!isPlates && "pointer"}
+                {...styles.heading}
+              >
+                My Plates
+              </Heading>
+              <Heading
+                color={isMarketplace ? "brand" : "gray.200"}
+                onClick={() => !isMarketplace && router?.push("/marketplace")}
+                cursor={!isMarketplace && "pointer"}
+                {...styles.heading}
+                marginLeft="3"
+              >
+                Marketplace
+              </Heading>
+            </Flex>
+          ) : (
+            pageTitle && <Heading {...styles.heading}>{pageTitle}</Heading>
+          )}
 
-        {/* Page banner */}
-        {pageImage && (
-          <Card backgroundImage={pageImage} {...styles.banner}>
-            <Heading {...styles.meta}>{pageDescription}</Heading>
-          </Card>
-        )}
+          {/* Page banner */}
+          {pageImage && (
+            <Card backgroundImage={pageImage} {...styles.banner}>
+              <Heading {...styles.meta}>{pageDescription}</Heading>
+            </Card>
+          )}
 
-        {children}
+          {children}
+        </Flex>
+        <Footer />
       </Flex>
-      <Footer />
-    </Flex>
+    </>
   );
 };
 
