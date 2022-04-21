@@ -43,35 +43,35 @@ const Marketplace = () => {
         <SearchBar {...searchProps} />
 
         <Flex {...styles.plates}>
-          {searchResults?.length ? (
-            searchResults?.map((plate, index) => {
-              const { id, name, picture, calories } = plate;
-              return (
-                <AspectRatio
-                  key={id || index}
-                  onClick={() => setActive(id)}
-                  {...styles.aspect}
-                >
-                  <Card
-                    backgroundImage={`url(${picture})`}
-                    opacity={isSearchLoading && "0.1"}
-                    {...styles.card}
+          {searchResults?.length
+            ? searchResults?.map((plate, index) => {
+                const { id, name, picture, calories } = plate;
+                return (
+                  <AspectRatio
+                    key={id || index}
+                    onClick={() => setActive(id)}
+                    {...styles.aspect}
                   >
-                    <Flex {...styles.meta}>
-                      <Heading {...styles.name}>{name}</Heading>
-                      <Text {...styles.calories}>{calories} cal</Text>
-                    </Flex>
-                    <DetailedPlate plate={plate} {...detailedPlateProps} />
-                  </Card>
-                </AspectRatio>
-              );
-            })
-          ) : (
-            <Flex {...styles.noResultsMessage}>
-              There aren&apos;t any plates related to your search. Try a
-              different search! 🔎
-            </Flex>
-          )}
+                    <Card
+                      backgroundImage={`url(${picture})`}
+                      opacity={isSearchLoading && "0.1"}
+                      {...styles.card}
+                    >
+                      <Flex {...styles.meta}>
+                        <Heading {...styles.name}>{name}</Heading>
+                        <Text {...styles.calories}>{calories} cal</Text>
+                      </Flex>
+                      <DetailedPlate plate={plate} {...detailedPlateProps} />
+                    </Card>
+                  </AspectRatio>
+                );
+              })
+            : !isSearchLoading && (
+                <Flex {...styles.noResultsMessage}>
+                  There aren&apos;t any plates related to your search. Try a
+                  different search! 🔎
+                </Flex>
+              )}
           {
             // Search loading spinner
             isSearchLoading && <Spinner {...styles.spinner} />

@@ -64,22 +64,22 @@ const SearchBar = ({
   };
 
   // Trigger search and make API calls
-  const handleSearch = () => {
+  const handleSearch = async () => {
     setIsSearchLoading(true);
 
     // Reset sort to "all"
     setSortBy("ALL");
 
     // Fetch results
-    getPlatesBySearch();
+    await getPlatesBySearch();
 
     setIsSearchLoading(false);
   };
 
   // Listen & trigger search when the enter key is pressed
-  const handleKeyDown = (event) => {
+  const handleKeyDown = async (event) => {
     if (event.key === "Enter" && !isSearchLoading) {
-      handleSearch();
+      await handleSearch();
     }
   };
 

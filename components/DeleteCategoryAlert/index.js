@@ -69,8 +69,9 @@ const DeleteCategoryAlert = ({ name }) => {
           <AlertDialogCloseButton />
           <AlertDialogBody>
             Are you sure you want to delete this category?
-            <br /> Individual plates won&apos;t be deleted, instead, find them
-            under the &quot;All&quot; category.
+            <br />
+            The category will be gone but your plates will be stored on the
+            <b>&quot;All&quot;</b> category.
           </AlertDialogBody>
           <AlertDialogFooter {...styles.footer}>
             <Button
