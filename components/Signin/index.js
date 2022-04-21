@@ -21,6 +21,8 @@ const Signin = ({ providers, screenHeight, isPortrait }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
 
+  const year = new Date().getFullYear();
+
   const handleChange = (event) => {
     if (error) setError(null);
     setEmail(event.target.value);
@@ -120,7 +122,7 @@ const Signin = ({ providers, screenHeight, isPortrait }) => {
         {/* Footer */}
         <Flex {...styles.footer}>
           <Image src="/black-logo.png" alt="Preppy" {...styles.logo} />
-          <Text {...styles.disclaimer}>All rights reserved 2021</Text>
+          <Text {...styles.disclaimer}>All rights reserved {year}</Text>
         </Flex>
       </Flex>
 
