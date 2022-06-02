@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CreatableSelect from "react-select/creatable";
 
-const CategorySelect = ({ categories, onChange, defaultValue }) => {
+const CategorySelect = ({ categories, onChange, defaultValue, isEdit }) => {
   // Destructure category object into only names
   categories = categories?.map(({ name }) => name);
 
@@ -42,7 +42,7 @@ const CategorySelect = ({ categories, onChange, defaultValue }) => {
 
   useEffect(() => {
     // Set initial value to passed down default value
-    if (defaultValue) {
+    if (defaultValue && !isEdit) {
       setValue(createOption(defaultValue));
     }
   }, [categories]);
@@ -57,7 +57,7 @@ const CategorySelect = ({ categories, onChange, defaultValue }) => {
       options={options}
       value={value}
       styles={styles}
-      placeholder="Category"
+      placeholder={isEdit ? defaultValue : "Category"}
       defaultValue={defaultValue}
       noOptionsMessage={() => "You don't have any categories. Create one."}
     />
@@ -69,14 +69,13 @@ export { CategorySelect };
 const styles = {
   container: (provided) => ({
     ...provided,
-    marginTop: "0.25em",
     backgroundColor: "transparent",
     width: "100%",
   }),
   placeholder: (provided) => ({
     ...provided,
     fontFamily: "system-ui, sans-serif", // default
-    fontSize: "2.25rem", // 4xl
+    fontSize: "1.75rem", // 4xl
     fontWeight: "600",
     width: "100%",
     color: "#A0AEC0", // gray.400

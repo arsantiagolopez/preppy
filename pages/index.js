@@ -62,12 +62,12 @@ const styles = {
   wrapper: {
     direction: "column",
     width: "100%",
-    paddingTop: "0.5em",
+    paddingTop: "1em",
   },
   topRow: {
     direction: { base: "column", md: "row" },
     width: "100%",
-    minHeight: "40vh",
+    minHeight: "30vh",
   },
   aspect: {
     width: "100%",
@@ -77,20 +77,21 @@ const styles = {
   },
   card: {
     cursor: "pointer",
-    padding: { base: "1em", md: "2em" },
+    padding: { base: "1em", md: "1.5em" },
     _hover: {
       opacity: "0.7",
     },
   },
   heading: {
     color: "white",
-    fontSize: "5xl",
+    fontSize: "4xl",
     isTruncated: true,
   },
   bottomRow: {
+    ratio: 1,
     justify: "center",
     align: "center",
-    minHeight: "40vh",
+    minHeight: { base: "45vh", md: "37vh" },
     direction: "column",
   },
 };

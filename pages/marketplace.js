@@ -110,7 +110,7 @@ const styles = {
     marginX: "0",
     width: "100%",
     boxShadow: "lg",
-    borderRadius: "2em",
+    borderRadius: { base: "1em", md: "1.5em" },
   },
   card: {
     cursor: "pointer",

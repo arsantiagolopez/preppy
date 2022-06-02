@@ -22,6 +22,7 @@ const Layout = ({
 
   const isPlates = router?.pathname === "/plates";
   const isMarketplace = router?.pathname === "/marketplace";
+  const isPlate = router?.pathname.includes("/plates/");
 
   const navigationProps = {
     hideMobileMainNav,
@@ -76,7 +77,8 @@ const Layout = ({
 
           {children}
         </Flex>
-        <Footer />
+
+        {!isPlate && <Footer />}
       </Flex>
     </>
   );
@@ -92,14 +94,14 @@ const styles = {
   },
   content: {
     direction: "column",
-    paddingX: { base: "1em", md: "20vw" },
+    paddingX: { base: "1em", md: "22vw" },
   },
   heading: {
     marginTop: { base: "0.5em", md: "0" },
   },
   banner: {
     width: "100%",
-    height: { base: "45vh", md: "50vh" },
+    height: { base: "45vh", md: "45vh" },
     marginY: { base: "1em", md: "2em" },
   },
   meta: {

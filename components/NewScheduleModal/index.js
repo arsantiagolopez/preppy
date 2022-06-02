@@ -152,7 +152,7 @@ const NewScheduleModal = ({ schedules }) => {
               </Flex>
 
               {/* Name */}
-              <Flex {...styles.field} marginTop="3em">
+              <Flex {...styles.field} marginTop="2em">
                 <Input placeholder="Name" {...styles.input} {...nameRegister} />
                 {errors.name && (
                   <Text {...styles.error}>{errors.name.message}</Text>
@@ -160,7 +160,7 @@ const NewScheduleModal = ({ schedules }) => {
               </Flex>
 
               {/* Plan select */}
-              <Flex {...styles.field} paddingBottom="2em">
+              <Flex {...styles.field} paddingBottom="1em">
                 <Controller
                   control={control}
                   name="schedule"
@@ -234,12 +234,14 @@ const styles = {
   title: {
     display: { base: "none", md: "flex" },
     size: "2xl",
+    paddingTop: { base: "0", md: "5vh" },
   },
   input: {
     isTruncated: true,
+    spellCheck: false,
     size: "xl",
     paddingY: "0.2em",
-    fontWeight: "600",
+    fontWeight: "700",
     fontSize: "4xl",
     letterSpacing: "tight",
   },

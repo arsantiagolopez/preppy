@@ -108,7 +108,7 @@ const styles = {
     top: "0",
     width: "100%",
     paddingY: "1em",
-    paddingX: { base: "1em", md: "20vw" },
+    paddingX: { base: "1em", md: "22vw" },
     zIndex: 4,
   },
   left: {

@@ -174,7 +174,6 @@ const EditPlateModal = ({ data }) => {
                   <Controller
                     name="category"
                     control={control}
-                    defaultValue={category}
                     render={({ field: { onChange, value, ref } }) => (
                       <CategorySelect
                         inputRef={ref}
@@ -182,6 +181,7 @@ const EditPlateModal = ({ data }) => {
                         value={value}
                         categories={categories}
                         defaultValue={category}
+                        isEdit
                       />
                     )}
                   />

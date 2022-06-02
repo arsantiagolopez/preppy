@@ -88,7 +88,7 @@ const styles = {
   cardContainer: {
     ratio: 1,
     width: "100%",
-    flexBasis: { base: "48%", md: "32%" },
+    flexBasis: { base: "48%", md: "31.5%" },
     marginBottom: { base: "3%", md: "1em" },
     boxShadow: "lg",
     borderRadius: "2em",

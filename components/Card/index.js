@@ -21,7 +21,7 @@ export { Card };
 
 const styles = {
   wrapper: {
-    borderRadius: { base: "1em", md: "2em" },
+    borderRadius: { base: "1em", md: "1.5em" },
     boxShadow: "xl",
     width: "100%",
     marginBottom: "1em",

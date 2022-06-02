@@ -6,35 +6,35 @@
 
 <div align="center">
     <img src="https://img.shields.io/github/last-commit/arsantiagolopez/preppy?label=updated"/>
-    <a href="https://snyk.io/test/github/arsantiagolopez/preppy"><img src="https://snyk.io/test/github/arsantiagolopez/preppy/badge.svg" /></a>
     <a href="https://github.com/arsantiagolopez/preppy/blob/main/LICENSE"><img src="https://img.shields.io/github/license/arsantiagolopez/preppy?color=303030" /></a>
     <img src="https://img.shields.io/github/languages/top/arsantiagolopez/preppy" />
 </div>
 
-<div align="center" style="vertical-align: middle;">
-	<a href="https://alexandersantiago.com/"><img src="https://alexandersantiago.com/alex.png" width="24" style="margin-left: -1em;"></img></a>
-	<a href="https://instagram.com/asantilopez"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-1024.png" width="25"></img></a>
-	<a href="https://twitter.com/arsantiagolopez"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-512.png" width="25"></img></a>
-	<a href="mailto:arsantiagolopez@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/black-white-social-media/32/mail_email_envelope_send_message-1024.png" width="25"></img></a>
+<div align="center">
+	<a href="https://alexandersantiago.com/"><img src="https://alexandersantiago.com/alex.png" width="24" style="margin-left: -1em;" /></a>
+	<a href="https://instagram.com/asantilopez"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-1024.png" width="25" /></a>
+	<a href="https://twitter.com/arsantiagolopez"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-512.png" width="25" /></a>
+	<a href="mailto:arsantiagolopez@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/black-white-social-media/32/mail_email_envelope_send_message-1024.png" width="25" /></a>
 </div>
 
-<p align="center">
+<div align="center">
   <a href="#preview">Preview</a> •
   <a href="#features">Features</a> •
   <a href="#tech">Tech Stack</a> •
   <a href="#inspiration">Inspiration</a> •
+  <a href="#objectives">Learning</a> •
   <a href="#license">License</a> •
   <a href="#contact">Contact</a>
-</p>
+</div>
 
 <h2 id="preview">⚡ Preview</h2>
 
 <details open>
-<summary>Mobile</summary>
+    <summary>Mobile</summary>
 </details>
 
 <details>
-<summary>Desktop</summary>
+    <summary>Desktop</summary>
 </details>
 
 <h2 id="features">🎯 Features</h2>
@@ -61,20 +61,20 @@
       <td>Server side rendering (SSR) of React components.</td>
   </tr>
   <tr>
-      <td><a href="https://dndkit.com/">Dnd Kit</img></a></td>
+      <td><a href="https://dndkit.com/">Dnd Kit</a></td>
       <td>Drag & Drop tookit.</td>
   </tr>
     <tr>
-      <td><a href="https://react-hook-form.com/">React Hook Form</img></a></td>
+      <td><a href="https://react-hook-form.com/">React Hook Form</a></td>
       <td>Form state management and validation.</td>
   </tr>
     <tr>
-      <td><a href="https://react-select.com/">React Select</img></a></td>
+      <td><a href="https://react-select.com/">React Select</a></td>
       <td>Select input control component for React.</td>
   </tr>
     </tr>
     <tr>
-      <td><a href="https://react-dropzone.js.org/">React Dropzone</img></a></td>
+      <td><a href="https://react-dropzone.js.org/">React Dropzone</a></td>
       <td>Upload image files.</td>
   </tr>
   <tr>
@@ -123,8 +123,8 @@
         <td>Downsize images before upload.</td>
     </tr>
     <tr>
-      <td><a href="https://axios-http.com/docs/intro" >Axios</a></td>
-      <td>Fetch data with promise based HTTP requests.</td>
+      <td><a href="https://axios-http.com/docs/intro">Axios</a></td>
+      <td>HTTP promise based data fetching requests.</td>
     </tr>
     <tr>
         <td>REST API</td>
@@ -155,6 +155,8 @@
 
 <h2 id="inspiration">💡 Inspiration</h2>
 
+<h2 id="objectives">💡 Learning Objectives</h2>
+
 <h2 id="license">📜 License</h2>
 
 [![License](https://img.shields.io/github/license/arsantiagolopez/preppy?color=303030)](./LICENSE)
@@ -162,8 +164,8 @@
 <h2 id="contact">☕ Contact me</h2>
 
 <div align="left">
-	<a href="https://alexandersantiago.com/"><img src="https://alexandersantiago.com/alex.png" width="40"></img></a>
-	<a href="https://instagram.com/asantilopez"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-1024.png" width="40"></img></a>
-	<a href="https://twitter.com/arsantiagolopez"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-512.png" width="40"></img></a>
-	<a href="mailto:arsantiagolopez@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/black-white-social-media/32/mail_email_envelope_send_message-1024.png" width="40"></img></a>
+	<a href="https://alexandersantiago.com/"><img src="https://alexandersantiago.com/alex.png" width="40" /></a>
+	<a href="https://instagram.com/asantilopez"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/instagram_online_social_media_photo-1024.png" width="40" /></a>
+	<a href="https://twitter.com/arsantiagolopez"><img src="https://cdn2.iconfinder.com/data/icons/black-white-social-media/32/twitter_online_social_media-512.png" width="40" /></a>
+	<a href="mailto:arsantiagolopez@gmail.com"><img src="https://cdn4.iconfinder.com/data/icons/black-white-social-media/32/mail_email_envelope_send_message-1024.png" width="40" /></a>
 </div>

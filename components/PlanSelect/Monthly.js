@@ -4,6 +4,7 @@ import {
   AccordionButton,
   AccordionItem,
   AccordionPanel,
+  Box,
   Flex,
   Heading,
   Image,
@@ -132,14 +133,15 @@ const Monthly = ({ plates, setSchedule }) => {
                     )}
                   </AccordionButton>
                 </h2>
-
-                <AccordionPanel
-                  display={activeWeek === index ? "flex" : "none"}
-                  {...styles.panel}
-                >
-                  {/* Week with droppable days */}
-                  <Week weekNum={index} {...weekProps} />
-                </AccordionPanel>
+                <Box {...styles.collapse}>
+                  <AccordionPanel
+                    display={activeWeek === index ? "flex" : "none"}
+                    {...styles.panel}
+                  >
+                    {/* Week with droppable days */}
+                    <Week weekNum={index} {...weekProps} />
+                  </AccordionPanel>
+                </Box>
               </AccordionItem>
             );
           })}
@@ -292,15 +294,14 @@ const styles = {
   },
   item: {
     border: "none",
-    minWidth: { base: "4em", md: "6em" },
     marginRight: { base: "1", md: "2" },
-    justify: "center",
+    position: "relative",
   },
   image: {
     borderRadius: "full",
     objectFit: "cover",
     draggable: "false", // Prevents image src from being dragged rather than image component
-    boxSize: { base: "3em", md: "5em" },
+    boxSize: { base: "3em", md: "4em" },
     _hover: {
       boxShadow: "0px 0px 15px -6px rgba(0,0,0,0.62)",
       transition: "boxShadow 2s ease-in-out",
@@ -340,6 +341,17 @@ const styles = {
     color: "brand",
     size: "sm",
     speed: "1s",
+  },
+  collapse: {
+    position: { base: "static", md: "relative" },
+    left: { base: "none", md: "50%" },
+    right: { base: "none", md: "50%" },
+    marginLeft: { base: "auto", md: "-50vw" },
+    marginRight: { base: "auto", md: "-50vw" },
+    width: { base: "200vw", md: "100vw" },
+    maxWidth: { base: "100%", md: "100vw" },
+    overflowX: "auto",
+    overflowY: "hidden",
   },
   panel: {
     padding: 0,

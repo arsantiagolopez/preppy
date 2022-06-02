@@ -64,7 +64,7 @@ const Sidebar = () => {
 
       <Heading onClick={() => signOut()} {...styles.signout}>
         Sign out
-        <Icon as={IoExitOutline} marginLeft="5" />
+        <Icon as={IoExitOutline} marginLeft="2" />
       </Heading>
     </Flex>
   );
@@ -86,12 +86,14 @@ const styles = {
     bottom: "0",
     left: "0",
     width: "17vw",
-    padding: "2.75em",
+    padding: "2.5em",
   },
   item: {
     paddingY: "1",
     cursor: "pointer",
     noOfLines: 1,
+    fontSize: "3xl",
+    letterSpacing: "-1.5px",
     _hover: {
       color: "brand",
     },
@@ -101,10 +103,11 @@ const styles = {
     textTransform: "capitalize",
   },
   signout: {
-    size: "lg",
     color: "red.600",
     cursor: "pointer",
     noOfLines: 1,
+    fontSize: "3xl",
+    letterSpacing: "-1.5px",
     _hover: {
       textDecoration: "underline",
     },

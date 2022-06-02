@@ -363,10 +363,11 @@ const styles = {
   },
   input: {
     isTruncated: true,
+    spellCheck: false,
     size: "xl",
     paddingY: "0.2em",
-    fontWeight: "600",
-    fontSize: "4xl",
+    fontWeight: "700",
+    fontSize: "3xl",
     letterSpacing: "tight",
   },
   error: {

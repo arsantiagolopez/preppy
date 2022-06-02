@@ -34,7 +34,7 @@ const Signin = ({ providers, screenHeight, isPortrait }) => {
     const res = await signIn("email", {
       email,
       redirect: false,
-      callbackUrl: `${process.env.NEXTAUTH_URL}`,
+      callbackUrl: `${process.env.NEXT_PUBLIC_DOMAIN}`,
     });
 
     if (res.error) {
@@ -93,7 +93,7 @@ const Signin = ({ providers, screenHeight, isPortrait }) => {
             {...styles.socials}
             onClick={() =>
               signIn(id, {
-                callbackUrl: `${process.env.NEXTAUTH_URL}`,
+                callbackUrl: `${process.env.NEXT_PUBLIC_DOMAIN}`,
               })
             }
             marginBottom={
