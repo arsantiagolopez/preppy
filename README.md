@@ -31,10 +31,12 @@
 
 <details open>
     <summary>Mobile</summary>
+    <img src="https://github.com/arsantiagolopez/gifs/blob/main/preppy/mobile.gif" />
 </details>
 
 <details>
     <summary>Desktop</summary>
+    <img src="https://github.com/arsantiagolopez/gifs/blob/main/preppy/desktop.gif" />
 </details>
 
 <h2 id="features">🎯 Features</h2>
