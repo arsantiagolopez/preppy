@@ -41,9 +41,12 @@
 
 <h2 id="features">🎯 Features</h2>
 
-- Create a weekly meal plan.
-- Create individual plate recipes.
-- Track proteins, carbs, and fats.
+- Create personalized individual plates and track their calories and macros – proteins, carbs and fats.
+- Categorize your plates in categories and quickly find them.
+- Find recipes from chefs all over the world and save your favorite ones.
+- Filter marketplace recipes by name, proteins, carbs or fats.
+- Create daily, weekly or monthly meal plans to track your calorie intake.
+- Display your meal plans in a day by day basis schedule format.
 
 <h2 id="tech">‎‍💻 Tech Stack</h2>
 
@@ -157,7 +160,15 @@
 
 <h2 id="inspiration">💡 Inspiration</h2>
 
+Fitness is a very important part of my life. With my recent Next.js mastery, I wanted to quickly create a solution for myself, and my family, to ease our transition into the meal prepping world. We try to count calories, carbs and fats by hand but it gets tideous. Preppy is a simple solution that would allow us to track everything from our phone and keep a tab of our health and fitness.
+
 <h2 id="objectives">💡 Learning Objectives</h2>
+
+- Design & code modern UI interfaces.
+- Master Next.js & Next.js API feature.
+- Learn a modern Drag and Drop library.
+- Master form & data collection from users.
+- Find the most powerful programming stack.
 
 <h2 id="license">📜 License</h2>
 
