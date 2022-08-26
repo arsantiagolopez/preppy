@@ -1,7 +1,7 @@
 <div align="center">
        <img src="https://i.ibb.co/99g9ND1/black-logo.png" />
     <a href="https://preppy.golf" style="color: #303030;"><h1>Preppy</h1></a>
-    <h4>Create a weekly meal plan, track your macros, and find recipes from around the world.</h4>
+    <h4>There is no one-size-fits-all solution when it comes to nutrition. Keep tabs on your health with the help of Preppy, an app where you can personalize meal plans, track macros, and find new recipes from around the world. </h4>
 </div>
 
 <div align="center">
@@ -42,11 +42,11 @@
 <h2 id="features">🎯 Features</h2>
 
 - Create personalized individual plates and track their calories and macros – proteins, carbs and fats.
-- Categorize your plates in categories and quickly find them.
-- Find recipes from chefs all over the world and save your favorite ones.
+- Categorize your plates to easily locate them.
+- Discover new recipes from chefs all over the world and save your favorite ones.
 - Filter marketplace recipes by name, proteins, carbs or fats.
 - Create daily, weekly or monthly meal plans to track your calorie intake.
-- Display your meal plans in a day by day basis schedule format.
+- Display your meal plans on a day-by-day basis format.
 
 <h2 id="tech">‎‍💻 Tech Stack</h2>
 
@@ -59,15 +59,15 @@
   </tr>
   <tr>
       <td><a href="https://reactjs.org/">React</a></td>
-      <td>To build a component based user interface.</td>
+      <td>Build a component-based user interface.</td>
   </tr>
   <tr>
       <td><a href="https://nextjs.org/">Next.js</a></td>
-      <td>Server side rendering (SSR) of React components.</td>
+      <td>Server-side rendering (SSR) of React components.</td>
   </tr>
   <tr>
       <td><a href="https://dndkit.com/">Dnd Kit</a></td>
-      <td>Drag & Drop tookit.</td>
+      <td>Drag & Drop toolkit.</td>
   </tr>
     <tr>
       <td><a href="https://react-hook-form.com/">React Hook Form</a></td>
@@ -88,7 +88,8 @@
   </tr>
   <tr>
       <td><a href="https://axios-http.com/docs/intro" >Axios</a></td>
-      <td>Fetch data with promise based HTTP requests.</td>
+      <td>Fetch data with promise-based HTTP requests.
+</td>
   </tr>
   <tr>
       <td><a href="https://momentjs.com/">Moment.js</a></td>
@@ -109,7 +110,7 @@
     </tr>
     <tr>
         <td><a href="https://www.mongodb.com/">MongoDB</a></td>
-        <td>NoSQL document based database.</td>
+        <td>NoSQL document-based database.</td>
     </tr>
     <tr>
         <td><a href="https://www.mongoose.com/">Mongoose</a></td>
@@ -129,7 +130,7 @@
     </tr>
     <tr>
       <td><a href="https://axios-http.com/docs/intro">Axios</a></td>
-      <td>HTTP promise based data fetching requests.</td>
+      <td>HTTP promise-based data fetching requests.</td>
     </tr>
     <tr>
         <td>REST API</td>
@@ -160,7 +161,7 @@
 
 <h2 id="inspiration">💡 Inspiration</h2>
 
-Fitness is a very important part of my life. With my recent Next.js mastery, I wanted to quickly create a solution for myself, and my family, to ease our transition into the meal prepping world. We try to count calories, carbs and fats by hand but it gets tideous. Preppy is a simple solution that would allow us to track everything from our phone and keep a tab of our health and fitness.
+Fitness has always been an important part of my life. With my recent Next.js mastery, I wanted to create an efficient solution for me and my family to ease into our transition into the meal prepping world. We've tried manually counting calories, carbs and fats to stay on track, but it always got tedious. Preppy is a simple solution that allows everyone, especially beginners, to track everything from their phone and keep tabs on their health and fitness.
 
 <h2 id="objectives">💡 Learning Objectives</h2>
 
